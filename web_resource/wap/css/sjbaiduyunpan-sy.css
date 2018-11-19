@@ -1,0 +1,310 @@
+/*
+搜百度盘css
+*/
+html,body,div,object,pre,code
+,h1,h2,h3,h4,h5,h6,p,span,em,cite,del
+,a,img,ul,li,ol,dl,dt,dd,fieldset
+,legend,form,input,button,textarea,header
+,section,footer,article,nav,aside
+,menu,figure,figcaption{
+    padding:0;
+    margin:0;
+    border:0;
+    font-family: "Microsoft YaHei";
+}
+li{list-style:none;}
+b,em,h1,h2,h3,h4,h5,h6,i {
+    font-size:1em;
+    font-weight:400;
+    font-style:normal
+}
+a{text-decoration:none;color:#333;}
+.img img,video {vertical-align:middle;}
+header,nav, section,footer,.xzul:after{
+    clear: both;
+    overflow: hidden;
+    position:relative;
+}
+body {
+    min-width:320px;
+    margin:0 auto;
+    background-color:#f2f2f2;
+}
+/*妞ゅ爼鍎�*/
+.header{
+    width:100%;
+    height:55px;
+    background-color:#f7f7f7;
+    border-bottom:1px solid #d7d7d7;
+    box-shadow:0 1px 1px #e0e0e0;
+    z-index:1;
+}
+.header-z{
+    width:60px;
+    height:55px;
+    float:left;
+    cursor:pointer;
+    display:none\9;
+}
+.header-z img{
+    width:30px;
+    height:25px;
+    margin:15px;
+}
+.header-h1{
+    width:81%;
+    height:55px;
+    float:right;
+}
+.header-h1 img{
+    width:100px;
+    height:35px;
+    margin: 10px 0 0 25%;
+}
+/*鐎佃壈鍩�*/
+.nav{
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    display:none;
+    display:block\9;
+}
+.nav a{
+    height:50px;
+    line-height:50px;
+    display:block;
+    font-size:1.1rem;
+    color:#2C91E3;
+    padding-left:4%;
+    border-bottom:1px solid #e6e6e6;
+}
+.nav a:hover{background-color:#F5FCFF;}
+/*閹兼粎鍌�*/
+.form{
+    width:94%;
+    height:45px;
+    display:block;
+    background-color:#E4E5E7;
+    border-radius:5px;
+    box-shadow:0 1px 1px #e0e0e0;
+    margin-top:15px;
+    margin-left:3%;
+    position:relative;
+}
+.form-input,.form-button{
+    width: 98%;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    display: inline-block;
+    background-color: #E4E5E7;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.15rem;
+    text-align: center;
+    color: #2E99E9;
+    position: relative;
+    z-index: 5;
+}
+.form-button{
+    width:15%;
+    color: #969696;
+    background:#E4E5E7 url('../images/1.png')no-repeat 20px 13px;
+    background-size:20px 20px;
+    cursor:pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:6;
+}
+
+/*閻ф儳瀹虫禍鎴犳磸閺堬拷鏌婄挧鍕爱*/
+.section-main{
+    width:100%;
+    height:auto;
+    margin-top:15px;
+}
+.main-h2{
+    width:60%;
+    font-size:1.05rem;
+    color:#333;
+    padding-left:5px;
+    margin:20px 0 10px 0\9;
+    margin-left: 10px;
+    float:left;
+    margin-bottom:10px;
+}
+.main-a{
+    float:right;
+    margin-top: 2px;
+    padding-right: 10px;
+    font-size: .9rem;
+    color: #EE5111;
+}
+.section-main2{margin-top:12px;background-color: #fff;}
+.main2-div{
+    width:100%;
+    height:auto;
+    background-color: #fff;
+}
+
+.main2-a{
+    width:94%;
+    height:55px;
+    display:block;
+    padding: 5px 0 10px 0;
+    overflow:hidden;
+    border-bottom:1px solid #e6e6e6;
+    margin-left:3%
+}
+.main2-h3{
+    height:30px;
+    line-height:30px;
+    font-size:1.1rem;
+    color:#0000CC;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.main2-p{
+    height:26px;
+    line-height: 26px;
+    overflow:hidden;
+}
+.h2i{
+    width: 4px;
+    height: 16px;
+    background: #EE5111;
+    display: inline-block;
+    position: relative;
+    top: 1.5px;
+    margin-right: 5px
+}
+.main2-p-span{
+    background-color:#858585;
+    font-size:.9rem;
+    color:#fff;
+    padding: 0 2px;
+}
+.main2-p-span2{
+    font-size:.9rem;
+    color:#a9a9a9;
+    padding:0 7px 0 2px;
+    border-right:1px solid #aaa;
+}
+.p-span3{border:0;padding:0;}
+.main2-div:hover{background-color:#F5FCFF;}
+
+.main3-div{
+    text-align: center;
+}
+.main3-div a{
+    display:block;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background-color:#fff;
+    border-bottom:1px solid #e6e6e6;
+    font-size:1rem;
+    color:#565656;
+}
+.main3-div a:hover{background-color:#F5FCFF;color:#EE5111;}
+
+/*鎼存洟鍎�*/
+.footer{
+    width:96%;
+    margin:15px 0 25px 3%;}
+.footer-bottom{
+    width:100%;
+    line-height:30px;
+    text-align:center;
+}
+.footer strong a{
+    display:inline-block;
+    font-size:1rem;
+    color: #2E99E9;
+    padding:0 20px;
+}
+.footer-bottom2{
+    margin-top:5px;
+}
+.footer-bottom2 p{
+    line-height: 20px;
+    font-size: .85rem;
+    color: #8b8b8b;
+    text-align: center;
+}
+.footer-bottom2 p a{color: #2E99EB;}
+
+.fixed{
+    position: fixed;
+    top: 75%;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    z-index:2;
+}
+.fixed img{
+    width:50px;
+    height:50px;
+}
+
+.relax-explain
+{
+    text-indent:1em;
+    padding:10px;
+    padding-left:11px;
+    line-height:20px;
+}
+.relax-explain p
+{
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    word-break:break-all;
+    text-align:justify;
+    color:#888;
+    font-size: .95rem;
+    line-height: 25px;
+}
+
+.now-search-key
+{
+    /*-moz-column-count:2;
+    -webkit-column-count:2;
+    column-count:2;*/
+    padding: 0px 10px 0px 10px;
+    padding-left:8px;
+}
+.now-search-key li
+{
+}
+.now-search-key li a
+{
+    color: #0000CC;
+    font-size: 1.05rem;
+    line-height: 30px;
+    padding: 7px 5px 5px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 97%;
+    border-bottom: 1px solid #e6e6e6;
+    display: block;
+}
+
+
+
+/*鏈€鏂版枃绔�*/
+.section-zxwz{width: 100%;height: auto;background-color: #fff;}
+.section-list {height: auto;}
+.slist-li{height:auto;position:relative;overflow:hidden;border-bottom:1px solid #f5f5f5;}
+.slist-li a{display:block;height:75px;padding: 10px 15px;}
+.slist-li-left{margin-right:120px;height:75px;}
+.slist-li-left-h2{height:50px;line-height:23px;font-size:1.1rem;color:#101010;overflow:hidden;}
+.slist-li-left-div{width:100%;height:20px;line-height:20px;margin-top:3px;position:relative;overflow:hidden;}
+.slist-li-left-div-spanz{display:inline-block;float:left;height:20px;font-size:.85rem;color:#9a9a9a;}
+.slist-li-left-div-spany{display: inline-block;padding-left: 15px;font-size:.85rem;color:#9a9a9a;float: left;}
+.slist-li-right{width:110px;height:75px;position:absolute;right:15px;top:10px;}
+.slist-li-right img{width:110px;height:75px;}
+.mtxx-gd{display: block;width: 100%;height: 50px;line-height: 50px;background-color: #fff;text-align: center;border-bottom: 1px solid #e6e6e6;font-size: 1rem;color: #666;}

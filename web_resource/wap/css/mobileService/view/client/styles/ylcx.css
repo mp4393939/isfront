@@ -1,0 +1,523 @@
+body{
+    font-family: '微软雅黑';
+    max-width: 640px;
+    min-width: 320px;
+    margin:0 auto;
+    background: #fff;
+}
+.headTitleContainer{
+    text-align: center;
+    padding-top: 0.16rem;
+}
+.headTitleContainer .cruentTitle{
+    font-size: 0.24rem;
+    color: #333333;
+    padding-bottom: 0.2rem;
+}
+.headTitleContainer:after {
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: #d2d2d2;
+    transform: scaleY(0.3);
+}
+
+.poupleContainer{
+    background: #fff;
+    position: absolute;
+    top: 0.9rem;
+    z-index: 10000;
+    width: 100%;
+    border: 1px solid #999;
+    padding-bottom: 0.2rem;
+    display: none;
+    left: 0;
+}
+.busiName5{/*改*/
+    padding-top: 0.3rem;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+.percentPoupleButton{
+    vertical-align: top;
+}
+.infopackage5 .labelDate{
+    vertical-align: middle;
+    margin-bottom: 0.05rem;
+    display: inline-block;
+}
+
+.titleBig{
+    border-bottom: 1px solid #d2d2d2;
+    padding-left: 0.25rem;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.24rem;
+}
+.titleBig img{
+    height: 0.44rem;
+    vertical-align: middle;
+}
+.titleBig:after{
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: #d2d2d2;
+    transform: scaleY(0.3);
+}
+.staticBg{
+    background: #b2e07c !important;
+}
+.dataPercentyContainer .redLine div{
+    width: 0;
+}
+.loadOutLine{
+    width: 0;
+}
+.showAttentionMessage{
+    position: relative;
+    width: 100%;
+    height: 1.72rem;
+}
+.showAttentionMessage .nolessBg{
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+.busiInfoContainer .busiTitle5{
+    margin-bottom: 0;
+}
+
+/*新样式*/
+.clearPadding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.clearPadding .busiTitle5{
+}
+.clearPadding .flowpackageList5{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.iconItempart{
+    padding-left: 0.25rem;
+}
+
+/*.showAttentionMessage{
+    width: 6.4rem;
+    height: 1.72rem;
+    background-size: cover;
+    background: url(./images/nolessBg.jpg);
+
+}*/
+
+.showAttentionMessage .messageUse{
+    font-size: 0.22rem;
+    color: #999;
+    padding-left: 0.25rem;
+    padding-top: 0.48rem;
+}
+.showAttentionMessage .messageUse .lastflows{
+    font-size: 0.4rem;
+    color: #ff7744;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.showAttentionMessage .messageUse .lastflows em{
+    font-size: 0.22rem;
+    font-weight: normal;
+
+}
+
+.showAttentionMessage .messagePro{
+    font-size: 0.22rem;
+    color: #333;
+    padding-left: 0.25rem;
+}
+.showAttentionMessage .messagePro span{
+    color: #ff7744;
+}
+.showAttentionMessage .adMeaageLyout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nolessbarContainer{
+    padding:0 0.25rem;
+}
+
+.sourceName{
+    padding-top: 0.34rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.25rem;
+    color: #999999;
+    font-size: 0.21rem;
+}
+.outflow{
+    padding-right: 0.25rem;
+}
+.busiInfoContainer{
+    padding-top: 0.5rem;
+}
+/* 增加动画颜色 -----------*/
+/* 日租宝颜色 -----------*/
+.dataPercentyContainer .rzbLine{
+    border:1px solid #6894d6;
+}
+.dataPercentyContainer .rzbLine div{
+    background: #6894d6;
+    height: 0.08rem;
+    width: 0;
+    border-radius:0.06rem;
+}
+
+/* 非日租宝颜色 -----------*/
+.dataPercentyContainer .notRzbLine{
+    border:1px solid #a79cc5;
+}
+.dataPercentyContainer .notRzbLine div{
+    background: #a79cc5;
+    height: 0.08rem;
+    width: 0;
+    border-radius:0.06rem;
+}
+/* 语音颜色 -----------*/
+.dataPercentyContainer .voiceLine{
+    border:1px solid #ffaa9c;
+}
+.dataPercentyContainer .voiceLine div{
+    background: #ffaa9c;
+    height: 0.08rem;
+    width: 0;
+    border-radius:0.06rem;
+}
+/* 短信颜色 -----------*/
+.dataPercentyContainer .smsLine{
+    border:1px solid #fbd86e;
+}
+.dataPercentyContainer .smsLine div{
+    background: #fbd86e;
+    height: 0.08rem;
+    width: 0;
+    border-radius:0.06rem;
+}
+/* 其他颜色 -----------*/
+.dataPercentyContainer .otherLine{
+    border:1px solid #60c5b2;
+}
+.dataPercentyContainer .otherLine div{
+    background: #60c5b2;
+    height: 0.08rem;
+    width: 0;
+    border-radius:0.06rem;
+}
+/*---------------- 增加动画颜色*/
+-->
+.zt_wai{
+    width: 6.4rem;
+    height:auto;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+.biao{
+    width: 6.4rem;
+    height: 1.16rem;
+    border-top:1px solid #e7e7e7;
+    border-bottom:1px solid #e7e7e7;
+}
+.sjcx{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.18rem;
+    color: #999999;
+    text-align: center;
+}
+.biaot{
+    height: 0.55rem;
+    line-height: 0.55rem;
+    font-size: 0.24rem;
+    color: #333333;
+    text-align: center;
+}
+.ztwbqu{
+    padding: 0 0.26rem;
+}
+.an_img{
+    height: 0.39rem;
+    line-height:0.39rem;
+    font-size: 0.24rem;
+    color: #333333;
+    font-weight: 700;
+    margin-top: 0.34rem;
+}
+.an_img img{
+    width:0.39rem;
+    margin-top: -0.05rem;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+
+}
+.tubiao{
+    width: 100%;
+    height: 2.64rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+#main{
+    width:2.9rem;
+    height: 2.64rem;
+    float: left;
+}
+#wz{
+    width: 1rem;
+    height: 0.54rem;
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    font-size: 0.24rem;
+    z-index: 999999999;
+}
+#wzm{
+    width:2.9rem;
+    height: 2.64rem;
+    float: left;
+}
+.yyll{
+    font-size: 0.22rem;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+.yyll span{
+    font-size: 0.24rem;
+    color: #FF7744;
+}
+.wzqq{
+    padding-bottom:0.2rem ;
+    padding-left:0.25rem;
+}
+.xian{
+    width: 103%;
+    margin-left: -0.24rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+.wzqq li{
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size:0.2rem;
+    color: #666666;
+    margin-bottom: 0.2rem;
+}
+.clb{
+    border-left: 3px solid #FF7744;
+    padding-left: 0.2rem;
+}
+.wzqq span{
+    font-size: 0.28rem;
+    color: #FF7744;
+}
+.snrzb{
+    margin-top: 0.3rem;
+    font-size: 0.21rem;
+    color: #333333;
+}
+.snrzb li{
+    clear: both;
+    height: 1.2rem;
+    line-height: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+.wz{
+    font-size: 0.28rem;
+    color: #FF7744;
+}
+.wz_22{
+    font-size: 0.22rem;
+    color: #FF7744;
+}
+.fz{
+    float: left;
+}
+.fy{
+    float: right;
+}
+.snrzb p{
+    height: 0.4rem;
+}
+.lu,.lu1,.lu2,.lu3,.lu4{
+    clear: both;
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 0.1rem;
+    border-radius: 10px;
+    border: 1px solid #6894d6;
+}
+.lu1{
+    border: 1px solid #a79cc5 !important;
+}
+.lu2{
+    border: 1px solid #ffaa9c !important;
+}
+.lu3{
+    border: 1px solid #fbd86e !important;
+}
+.lu4{
+    border: 1px solid #60c5b2 !important;
+}
+.n_lu,.n_lu1,.n_lu2,.n_lu3,.n_lu4{
+    width: 80%;
+    height: 0.1rem;
+    border-radius: 10px;
+    background: #95b4e2;
+}
+.n_lu1{
+    width: 20% !important;
+    background: #a79cc5;
+}
+.n_lu2{
+    width: 80% !important;
+    background: #ffaa9c;
+}
+.n_lu3{
+    width: 50% !important;
+    background: #fbd86e;
+}
+.n_lu4{
+    width: 70% !important;
+    background: #60c5b2;
+}
+#sz{
+    font-size: 0.4rem;
+    color: #FF7744;
+    font-weight: 700;
+}
+.yy_div{
+    width: 108%;
+    height: 2rem;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 0.22rem;
+    color: #333333;
+    padding: 0.2rem 0;
+    margin-left: -0.244rem;
+    margin-top: 0.3rem;
+}
+.yy_div li{
+    float: left;
+    line-height: 2rem;
+    text-align: center;
+}
+.img_br{
+    width: 1.46rem;
+    vertical-align: middle;
+
+}
+.yy_div li:nth-child(1){
+    width: 2.22rem;
+}
+.yy_div li:nth-child(2){
+    width: 3.7rem;
+    line-height: 0.5rem  !important;
+    padding: 0.1rem 0;
+}
+.sj_but{
+    width: 2.08rem;
+    height: 0.56rem;
+    border: 1px solid #FF7744;
+    font-size: 0.26rem;
+    color: #FF7744;
+    text-align:center;
+    font-weight: 700;
+    line-height: 0.56rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+
+}
+.butt{
+    width: 100%;
+    height: 2.57rem;
+}
+.anniu{
+    width:5.9rem;
+    height: 0.72rem;
+    background: #FF7744;
+    font-size: 0.3rem;
+    color:#FFFFFF;
+    text-align: center;
+    line-height: 0.72rem;
+    border-radius: 5px;
+    margin-top: 0.6rem;
+    font-weight: 700;
+
+}
+.wzys{
+    width:100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.22rem;
+    color: #333333;
+}
+.ku1,.ku2,.ku3,.ku4{
+    background: #79c546;
+    padding: 0.07rem;
+    float: left;
+    margin-top: 0.15rem;
+    margin-right: 0.1rem;
+
+}
+.ku2{
+    background: #6894d6;
+}
+.ku3{
+    background: #8172ac;
+}
+.ku4{
+    background: #cccccc;
+}
+.wz1{
+    font-size: 0.2rem;
+    color: #FF7744;
+    margin-top: 0.1rem;
+}
+.wz_24{
+    font-size: 0.24rem;
+    color: #FF7744;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>多个图片交替显示</title>
+</head>
+<body>
+<script language="javascript">
+    for(i=10;i<=15;i++){
+        if(i%2==0){
+            document.write("<img src=栏目导航.png width=",i,"% height=",3*i,"%>");
+            document.bgColor="000000";
+        }
+        else{
+            document.write("<img src=网上留言.png width=",3*i,"% height=",i,"%>");
+            document.bgColor="ffff00";
+        }
+    }
+</script>
+</body>
+</html>

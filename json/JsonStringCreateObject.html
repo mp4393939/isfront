@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>通过JSON字符串来创建对象</title>
+</head>
+<p><font color="#556b2f">
+    <!--使用深橄榄绿作为字体颜色-->
+    使用JSON解析器将JSON 转换为JavaScript对象是更安全的做法。JSON解析器只能识别JSON 文本，而不会编译脚本在浏览
+    器中，这提供了原生的JSON支持，而且JSON解析器的速度更快。较新的浏览器和最新的ECMAScript(JavaScript)标准中均
+    包含了原生的对JSON的支持。</font>
+
+</p>
+<body>
+<p>
+    <!--遍历<p>的内容,如果少一行不能输出内容-->
+    First Name: <span id="firstName"></span><br>
+    Last Name: <span id="lastName"></span><hr>
+    First Name0: <span id="firstName0"></span><br>
+    Last Name0: <span id="lastName0"></span><hr>
+    First Name2: <span id="firstName2"></span><br>
+    Last Name2: <span id="lastName2"></span><br>
+</p>
+<script type="text/javascript">
+    var array = '{"employees":' +
+        '[' +
+        '{"firstName":"Bill","lastName":"Gates" },' +
+        '{"firstName":"George","lastName":"Bush" },' +
+        '{"firstName":"Thomas","lastName":"Carter" }' +
+        ']}';
+// 创建对象
+    obj=JSON.parse(array);
+    document.getElementById("firstName").innerHTML=obj.employees[1].firstName
+    document.getElementById("lastName").innerHTML=obj.employees[1].lastName
+    document.getElementById("firstName0").innerHTML=obj.employees[0].firstName
+    document.getElementById("lastName0").innerHTML=obj.employees[0].lastName
+    document.getElementById("firstName2").innerHTML=obj.employees[2].firstName
+    document.getElementById("lastName2").innerHTML=obj.employees[2].lastName
+    //结论:对同一个JSON字符串创建的对象的引用遍历后，新创建的引用会将旧的实例覆盖
+    test=JSON.parse(array);
+    document.getElementById("firstName").innerHTML=test.employees[1].firstName
+    document.getElementById("lastName").innerHTML=test.employees[1].lastName
+</script>
+</body>
+</html>

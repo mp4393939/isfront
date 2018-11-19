@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="UTF-8">
+<h1><font color="#ff0000"><center>在 JavaScript中创建JSON 对象</center></font></h1>
+<p><font color="#556b2f">
+    JSON:JavaScript对象表示法（JavaScript Object Notation。
+    JSON是存储和交换文本信息的语法。类似XML。
+    JSON比XML更小、更快，更易解析。
+    JSON使用JavaScript 语法来描述数据对象，但是 JSON 仍然独立于语言和平台。
+    对于AJAX 应用程序来说，JSON比XML更快更易使用.
+    JSON 数据的书写格式是：名称/值对。名称/值对写一个冒号，然后是值。多个名称、值对用逗号分隔开。
+    如JSON语句{ "firstName":"Mike" ,"lastName":"John" }等价于Javascript语句firstName="Mike",lastName="John"
+</font>
+</p>
+<p>
+    name: <span id="jname"></span><br>
+    age: <span id="jage"></span><br>
+    address: <span id="jstreet"></span><br>
+    phone: <span id="jphone"></span><br>
+    email:<span id="jemail"></span><br>
+    empty:<span id="empty"></span><br>
+    null:<span id="null"></span><br>
+</p>
+<script type="text/javascript">
+    var JSON= {
+        "name":"Mike Jhon",
+        "street":"Fifth Avenue New York 666",
+        "age":56,
+        "phone":"15079234513",
+        "email":"1985473535@qq.com",
+        "empty":"",
+        "null":null};
+    document.getElementById("jname").innerHTML=JSON.name
+    document.getElementById("jage").innerHTML=JSON.age
+    document.getElementById("jstreet").innerHTML=JSON.street
+    document.getElementById("jphone").innerHTML=JSON.phone
+    document.getElementById("jemail").innerHTML=JSON.email
+    document.getElementById("empty").innerHTML=JSON.empty
+    document.getElementById("null").innerHTML=JSON.null
+</script>
+</body>
+</html>

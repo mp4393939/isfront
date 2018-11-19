@@ -1,0 +1,14 @@
+body{
+    font-family:"黑体,微软雅黑";
+    font-size:2;
+    font-width:100px;
+    font-height:6;
+    color:red;
+}
+div{
+    font-family:"微软雅黑";
+    font-size:5;
+    font-width:50px;
+    font-height:3;
+    color:blue;
+}

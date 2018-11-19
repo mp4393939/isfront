@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="1.0">
+    <servlet>
+        <servlet-name>servlet-name</servlet-name>
+        <servlet-class>servlet-class</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-name</servlet-name>
+        <url-pattern>url-pattern</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>welcome-file</welcome-file>
+    </welcome-file-list>
+</web-app>
+
+        <!--1.打开设置弹窗 方法：点击file&#45;&#45;otherSetting&#45;&#45;Default Setting（快捷键Ctrl+Alt+s）。
+
+        2.在搜索框输入template在左侧菜单栏找到并选中File And Code Templates。
+
+        3.右侧选中file标签。
+
+        4.点击绿色加号+添加模板。
+
+        5.name无所谓，extension写xml，然后添加上内容。
+
+        6.最后把enable live Template(激活模板)勾选上。
+        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
+        作者：一个很酷的人
+        来源：CSDN
+        原文：https://blog.csdn.net/Hi_Boy_/article/details/80491358
+        版权声明：本文为博主原创文章，转载请附上博文链接！-->

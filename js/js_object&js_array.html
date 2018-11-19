@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--测试js两个变量同名将如何输出-->
+<script>
+    //创建一个js对象第一种方法
+    var obj={one:"one",two:"two",three:"three"}
+    document.write(obj.two+"<br>"+"<br>");
+    //创建一个js对象第二种方法
+    var obj=new Object();
+    obj.firstname="Mike";
+    obj.lastname="Jhon";
+    obj.age=18;
+    document.write(obj.firstname+"<br>"+obj.lastname+"<br>"+obj.age+"<br>"+"<br>")
+    //创建一个js数组第一种方法
+    var a="a";
+    var b;
+    var array=new Array("doctorname","doctorid","token","createtime");
+    for(i=0;i<array.length;i++){
+        a=null;
+        document.write(array[i]+"<br>");
+    }
+    document.write(a+"<br>"+b+"<br>"+"<br>");
+    //创建一个js数组第二种方法
+    var array=new Array();
+    array[1]="this one";
+    array[2]="this two";
+    array[3]="this three";
+    array[4]="this four";
+    array[5]="this five";
+    for(i=array.length-1;i>=0;i--){
+        document.write(array[i]+"<br>");
+    }
+</script>
+</body>
+</html>

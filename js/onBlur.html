@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function alert_info(msg){//v1.0
+            alert(msg);//提示窗口
+        }
+        function confirm_info(msg) {//v1.0
+            confirm(msg);//确认窗口
+        }
+    </script>
+</head>
+<body>
+<p>会员注册:</p>
+<p>帐号:
+    <input type="text" name="account" onBlur="alert_info('“帐号”文本域失去焦点！')">
+</p>
+<p>密码:
+    <input type="password" name="password" onBlur="confirm_info('“密码”文本域失去焦点！')">
+</p>
+</body>
+</html>

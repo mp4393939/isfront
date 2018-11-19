@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    function links(){
+        n=document.links.length;
+        s="";
+        for(j=0;j<n;j++)
+            s=s+document.links[j].href+"\n";
+        if(s=="")
+            s=="没有任何链接"
+        else
+            alert(s)
+    }
+</script>
+<body>
+<form>
+    <input type="button" value="所有链接地址" onClick="link()"><br>
+</form>
+<!--<p><a href="submit_ok.html">链接1</a><br>
+    <a href="submit_ok.html">链接2</a><br>
+    <a href="submit_ok.html">链接3</a><br>
+    <a href="submit_ok.html">链接4</a><br>
+    <a href="submit_ok.html"><img src="darkhorse/img/middle01.jpg" /></a><br>
+    <a href="#"><font color="gray">电炖锅</font></a><br /><br>
+    <font color="red">¥499</font>
+</p>-->
+</body>
+</html>

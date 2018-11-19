@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>天数倒计时</title>
+    <a href="../submit_ok.html"><img src="猪吃食动图.jpg" align="left"></a>
+    <script type="text/javascript">
+        //定义函数：构建要显示的时间日期字符串
+        function showTime()
+        {
+            //创建Date对象
+            var today = new Date();
+            //分别取出年、月、日、时、分、秒
+            var year = today.getFullYear();
+            var month = today.getMonth()+1;
+            var day = today.getDate();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+            //如果是单个数，则前面补0
+            month  = month<10  ? "0"+month : month;
+            day  = day <10  ? "0"+day : day;
+            hours  = hours<10  ? "0"+hours : hours;
+            minutes = minutes<10 ? "0"+minutes : minutes;
+            seconds = seconds<10 ? "0"+seconds : seconds;
+            //构建要输出的字符串
+            var str = "北京时间:"+year+"年"+month+"月"+day+"日 "+hours+":"+minutes+":"+seconds;
+            //获取id=result的对象
+            var obj = document.getElementById("result");
+            //将str的内容写入到id=result的<div>中去
+            obj.innerHTML = str;
+            //延时器
+            window.setTimeout("showTime()",1000);
+        }
+    </script>
+    <style type="text/css">
+        #result{
+            width:500px;
+            margin:50px auto;
+            font-size:24px;
+            color:#FF0000;
+            padding:20px;
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body onload="showTime()" >
+<script type="text/javascript">
+    var date=new Date("2018/10/22 12:00:00");
+    var t="中午猪食投放时间";
+    var nowtime=new Date();
+    var lasttime=date.getTime()-nowtime.getTime();
+    var day=Math.floor(lasttime/(1000*60*60*24));
+    var hour=Math.floor(lasttime/(1000*60*60));
+    var min=Math.floor((lasttime/1000/60)%60);
+    var sec=Math.floor(lasttime/1000%60);
+    if(lasttime>=0);
+    document.write("现在离"+t+"还有:<font color=red>"+hour+"</font>小时" +
+        "<font color=red>"+min+"</font>分</font>小时<font color=red>"+sec+"</font>秒<br><br>");
+    var date1=new Date("2018/10/22 18:00:00");
+    var t1="下班时间";
+    var lasttime1=date1.getTime()-nowtime.getTime();
+    var day1=Math.floor(lasttime1/(1000*60*60*24));
+    var hour1=Math.floor(lasttime1/(1000*60*60));
+    var min1=Math.floor((lasttime1/1000/60)%60);
+    var sec1=Math.floor(lasttime1/1000%60);
+    if(lasttime1>=0);
+   document.write("现在离"+t1+"还有:<font color=red>"+day1+"</font>天<font color=red>"+hour1+"</font>小时" +
+        "<font color=red>"+min1+"</font>分</font>小时<font color=red>"+sec1+"</font>秒");
+</script>
+<div id="result"></div>
+<a href="../submit_ok.html"><img src="给自己一点掌声.gif"></a>
+<a href="../submit_ok.html"><img src="微笑中透露出无奈.jpg"></a>
+</body>
+</html>

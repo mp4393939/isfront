@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>JS和要改变的元素必须处于同一层级</title>
+    <h1 id="h1">this is a title</h1>
+    <!--改变html元素的内容:document.getElementById(id).innerHTML=new HTML-->
+    <script type="text/javascript">
+        var title=document.getElementById("h1");
+        title.innerHTML="this is not a title";
+    </script>
+    <p id="paragraph"></p>
+    <script type="text/javascript">
+        var paragraph=document.getElementById("paragraph");
+        paragraph.innerHTML="this is not a paragraph";
+    </script>
+    <!--改变html元素的属性:document.getElementById(id).attribute=new value-->
+    <img  id="img" src="猪吃食动图.jpg"></img>
+    <script type="text/javascript">
+        document.getElementById("img").src="给自己一点掌声.gif";
+    </script>
+    <!--改变html元素的属性:document.getElementById(id).attribute=new value-->
+    <p>
+        <font id="color" color="#ffffff">改变样式的颜色</font>
+    </p>
+    <script type="text/javascript">
+        document.getElementById("color").style.color="#ff0000";
+    </script>
+</head>
+<body>
+<!--onClick标记改变标题文字的颜色-->
+<h1 id="id1">My Heading 1</h1>
+<button type="button" name="button" onClick="document.getElementById('id1').style.color='blue'">点击
+</button>
+<!--onClick对文本操作-->
+<p id="p1">点击按钮对文本操作</p>
+<input type="button" value="隐藏" onclick="document.getElementById('p1').style.visibility='hidden'" />
+<input type="button" value="显示" onclick="document.getElementById('p1').style.visibility='visible'" />
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>网页停留时间</title>
+</head>
+<body>
+<form name="forms">
+    <div align="left">
+        <input type="text" name="input1" size="10">
+        <script type="text/javascript">
+            var sec=0;
+            var min=0;
+            var hou=0;
+            flag=0;
+            idt=window.setTimeout("update();",1000);
+            function update(){
+                sec++;
+                if(sec==60){
+                    sec=0;
+                    min+=1;
+                }
+                if(min==60){
+                    min=0;
+                    hou+=1;
+                }
+                if((min>0)&&(flag==0)){
+                    window.alert("时间提示");
+                    flag=1;
+                }
+                document.forms.input1.value=hou+"时"+min+"分"+sec+"秒";
+                idt=window.setTimeout("update();",1000);
+            }
+        </script>
+    </div>
+</form>
+<a href="../submit_ok.html"><img src="../背景图片1.jpg" alt="点击加载图片"></a>
+</body>
+</html>
